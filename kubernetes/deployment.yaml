@@ -15,7 +15,7 @@ spec:
         app: capstone
     spec:
       containers:
-        - name: capstone
+        - name: capstone1
           image: venkateshkesa/capstone:v2
           ports:
             - containerPort: 80
