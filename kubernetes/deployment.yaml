@@ -19,7 +19,7 @@ spec:
           image: venkateshkesa/capstone:v2
           ports:
             - containerPort: 80
-        - name: capstone
+        - name: nginx-server
           image: nginx:latest
           volumeMounts:
             - name: capstone-html
