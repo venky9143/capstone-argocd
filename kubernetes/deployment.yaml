@@ -19,3 +19,13 @@ spec:
           image: venkateshkesa/capstone:v2
           ports:
             - containerPort: 80
+        - name: nginx
+          image: nginx:latest
+          volumeMounts:
+            - name: capstone-html
+              mountPath: /usr/share/nginx/html/
+  volumes:
+    - name: html
+      configMap:
+        - name: capstone-html
+                       
