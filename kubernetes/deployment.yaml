@@ -20,7 +20,7 @@ spec:
           ports:
             - containerPort: 80
 <<<<<<< HEAD
-        - name: nginx
+        - name: capstone
           image: nginx:latest
           volumeMounts:
             - name: capstone-html
