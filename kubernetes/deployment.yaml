@@ -15,10 +15,11 @@ spec:
         app: capstone
     spec:
       containers:
-        - name: capstone
+        - name: capstone1
           image: venkateshkesa/capstone:v2
           ports:
             - containerPort: 80
+<<<<<<< HEAD
         - name: nginx
           image: nginx:latest
           volumeMounts:
@@ -29,3 +30,5 @@ spec:
       configMap:
         - name: capstone-html
                        
+=======
+>>>>>>> f92e825870968583c0294f8b6535f27aba4cd28f
